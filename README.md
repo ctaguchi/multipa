@@ -23,3 +23,17 @@ We aim to include more languages to take into account linguistic diversity.
 ## Notes
 - If you are using AFS, `preprocess.py` might cause `OS Error: File too large` due to reaching the limit of the number of files that a directory can accommodate.
 - Additional data from Forvo themselves are not uploaded in this repository.
+
+## Citation
+Chihiro Taguchi, Yusuke Sakai, Parisa Haghani, David Chiang. "Universal Automatic Phonetic Transcription into the International Phonetic Alphabet". INTERSPEECH 2023. \\
+For the time being, you may cite our arXiv paper:
+```
+@misc{taguchi2023universal,
+      title={Universal Automatic Phonetic Transcription into the International Phonetic Alphabet}, 
+      author={Chihiro Taguchi and Yusuke Sakai and Parisa Haghani and David Chiang},
+      year={2023},
+      eprint={2308.03917},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
