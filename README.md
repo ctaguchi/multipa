@@ -8,7 +8,6 @@ We appreciate your patience!
 
 ## Available training languages
 At this moment, we have the following languages incorporated available in the training data:
-- English
 - Finnish
 - Hungarian
 - Japanese
@@ -16,6 +15,11 @@ At this moment, we have the following languages incorporated available in the tr
 - Modern Greek
 - Polish
 - Tamil
+- (English)
 
 Note that English was added after the INTERSPEECH 2023 paper was submitted.
 We aim to include more languages to take into account linguistic diversity.
+
+## Notes
+- If you are using AFS, `preprocess.py` might cause `OS Error: File too large` due to reaching the limit of the number of files that a directory can accommodate.
+- Additional data from Forvo themselves are not uploaded in this repository.
