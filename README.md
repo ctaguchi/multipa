@@ -25,7 +25,7 @@ We aim to include more languages to take into account linguistic diversity.
 - Additional data from Forvo themselves are not uploaded in this repository.
 
 ## Citation
-Chihiro Taguchi, Yusuke Sakai, Parisa Haghani, David Chiang. "Universal Automatic Phonetic Transcription into the International Phonetic Alphabet". INTERSPEECH 2023. \\
+Chihiro Taguchi, Yusuke Sakai, Parisa Haghani, David Chiang. "Universal Automatic Phonetic Transcription into the International Phonetic Alphabet". INTERSPEECH 2023.\
 For the time being, you may cite our arXiv paper:
 ```
 @misc{taguchi2023universal,
