@@ -2,10 +2,6 @@
 MultIPA is yet another automatic speech transcription model into phonetic IPA.
 The idea is that, if we train a multilingual speech-to-IPA model with enough amount of good phoneme representations, the model's output will be approximated to phonetic transcriptions.
 
-Note that the codes in this repository are incomplete; we are still cleaning up the original codes for publishing in this repository.
-The finalized codes will be prepared by the day of the presentation at INTERSPEECH 2023 (mid-August).
-We appreciate your patience!
-
 ## Available training languages
 At this moment, we have the following languages incorporated available in the training data:
 - Finnish
@@ -19,6 +15,9 @@ At this moment, we have the following languages incorporated available in the tr
 
 Note that English was added after the INTERSPEECH 2023 paper was submitted.
 We aim to include more languages to take into account linguistic diversity.
+
+## Model
+You can run the model [here](https://huggingface.co/ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns).
 
 ## Notes
 - If you are using AFS, `preprocess.py` might cause `OS Error: File too large` due to reaching the limit of the number of files that a directory can accommodate.
@@ -37,3 +36,6 @@ For the time being, you may cite our arXiv paper:
       primaryClass={cs.CL}
 }
 ```
+
+## Contact
+`ctaguchi at nd.edu`
