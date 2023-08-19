@@ -12,14 +12,14 @@ import multiprocess
 
 from data_utils import filter_low_quality, downsampling
 
-def extract_all_chars_ipa(batch):
+def extract_all_chars_ipa(batch: dict) -> dict:
     # Change this function later at some point to create vocabulary based on
     # phonemes, not on characters
     all_text = " ".join(batch["ipa"])
     vocab = list(set(all_text))
     return {"vocab": [vocab], "all_text": [all_text]}
 
-def prepare_dataset_ipa(batch):
+def prepare_dataset_ipa(batch: dict) -> dict:
     audio = batch["audio"]
 
     # batched output is unbatched
