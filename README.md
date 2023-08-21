@@ -11,10 +11,33 @@ At this moment, we have the following languages incorporated available in the tr
 - Modern Greek
 - Polish
 - Tamil
-- (English)
 
-Note that English was added after the INTERSPEECH 2023 paper was submitted.
 We aim to include more languages to take into account linguistic diversity.
+
+## How to run
+You will first need to convert the transcription in the CommonVoice dataset into IPA.
+To do so, run `preprocess.py`; for example,
+```
+python preprocess.py \
+       -l ja pl mt hu fi el ta \
+       --num_proc 48
+```
+
+Then, run `main.py` to train a model.
+For example:
+```
+python3 main_general_preprocessed_allipa.py \
+        -l ja pl mt hu fi el ta \
+        -tr 1000 1000 1000 1000 1000 1000 1000 \
+        -te 200 200 200 200 200 200 200 \
+        -qf False False False False False False False \
+        -a True \
+        -s "japlmthufielta-nq-ns" \
+        -ns True \
+        -v vocab.json \
+        -e 10
+```
+for training with 7 languages, 1000 training samples and 200 validation samples for each, where audio samples with bad quality are not filtered out, additional data from Forvo are included, the suffix for the output model folder name is `japlmthufielta-nq-ns`, orthographic spaces are removed, the name of the vocab file is `vocab.json`, and the number of epochs is set to 10.
 
 ## Model
 You can run the model [here](https://huggingface.co/ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns).
@@ -38,4 +61,5 @@ For the time being, you may cite our arXiv paper:
 ```
 
 ## Contact
-`ctaguchi at nd.edu`
+Feel free to raise issues if you find any bugs.
+Also, feel free to contact me `ctaguchi at nd.edu` for collaboration.
