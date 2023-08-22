@@ -1,6 +1,7 @@
 # multipa
 MultIPA is yet another automatic speech transcription model into phonetic IPA.
 The idea is that, if we train a multilingual speech-to-IPA model with enough amount of good phoneme representations, the model's output will be approximated to phonetic transcriptions.
+Please check out the [Paper](https://arxiv.org/abs/2308.03917) for details.
 
 ## Available training languages
 At this moment, we have the following languages incorporated available in the training data:
@@ -40,7 +41,7 @@ python3 main_general_preprocessed_allipa.py \
 for training with 7 languages, 1000 training samples and 200 validation samples for each, where audio samples with bad quality are not filtered out, additional data from Forvo are included, the suffix for the output model folder name is `japlmthufielta-nq-ns`, orthographic spaces are removed, the name of the vocab file is `vocab.json`, and the number of epochs is set to 10.
 
 ## Model
-You can run the model [here](https://huggingface.co/ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns).
+You can run the model (trained on 1k samples for each language, 9h in total) [here](https://huggingface.co/ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns).
 
 ## Notes
 - If you are using AFS, `preprocess.py` might cause `OS Error: File too large` due to reaching the limit of the number of files that a directory can accommodate.
