@@ -125,6 +125,28 @@ def remove_space(batch: dict) -> dict:
     batch["ipa"] = ipa
     return batch
 
+def dataload_test(train_data, train_ipa, valid_data, valid_ipa):
+    assert len(train_data) == len(train_ipa), print("Length of train_data and train_ipa does not match")
+    assert len(valid_data) == len(valid_ipa), print("Length of valid_data and valid_ipa does not match")
+    if l == "en":
+        for j in range(len(train_data)):
+            filename = train_data[j]["file"]
+            ipa_filename = train_ipa[j]["file"]
+            assert filename == ipa_filename
+        for j in range(len(valid_ipa)):
+            filename = valid_data[j]["file"]
+            ipa_filename = valid_ipa[j]["file"]
+            assert filename == ipa_filename
+    else:
+        for j in range(len(train_data)):
+            filename = train_data[j]["path"].split("/")[-1]
+            ipa_filename = train_ipa[j]["path"].split("/")[-1]
+            assert filename == ipa_filename
+        for j in range(len(valid_data)):
+            filename = valid_data[j]["path"].split("/")[-1]
+            ipa_filename = valid_ipa[j]["path"].split("/")[-1]
+            assert filename == ipa_filename
+
 if __name__ == "__main__":
     # Arguments
     parser = argparse.ArgumentParser(description="Specify languages to use and options for each language")
@@ -163,12 +185,10 @@ if __name__ == "__main__":
                         help="Specify the number of train epochs. By default it's set to 30.")
     parser.add_argument("--num_proc", type=int, default=8,
                         help="Specify the number of CPUs for preprocessing. Default set to 24.")
-    # parser.add_argument("-o", "--output_directory", nargs=1, type=str, default=True, help="Specify the output directory")
     args = parser.parse_args()
     lgx = args.languages
     suffix = args.suffix
     
-    # output_dir = args.output_directory
     assert len(args.train_samples) <= len(lgx), "`train_samples` argument is longer than the number of languages"
     assert len(args.test_samples) <= len(lgx), "`test_samples` argument is longer than the number of languages"
     assert len(args.quality_filter) <= len(lgx), "`quality_filter` argument is longer than the number of languages"
@@ -229,7 +249,7 @@ if __name__ == "__main__":
                                      l,
                                      split="validation",
                                      num_proc=args.num_proc)
-            valid_data = test_data.sort("path")
+            valid_data = valid_data.sort("path")
         
         assert train_data[0]["sentence"] == train_ipa[0]["sentence"], (train_data[0]["sentence"], train_ipa[0]["sentence"])
         assert valid_data[0]["sentence"] == valid_ipa[0]["sentence"], (valid_data[0]["sentence"], valid_ipa[0]["sentence"])
@@ -240,26 +260,7 @@ if __name__ == "__main__":
             valid_data = valid_data.filter(lambda batch: "ச" not in batch["sentence"])
 
         # tests
-        assert len(train_data) == len(train_ipa), print("Length of train_data and train_ipa does not match")
-        assert len(valid_data) == len(valid_ipa), print("Length of test_data and test_ipa does not match")
-        if l == "en":
-            for j in range(len(train_data)):
-                filename = train_data[j]["file"]
-                ipa_filename = train_ipa[j]["file"]
-                assert filename == ipa_filename
-            for j in range(len(valid_ipa)):
-                filename = valid_data[j]["file"]
-                ipa_filename = valid_ipa[j]["file"]
-                assert filename == ipa_filename
-        else:
-            for j in range(len(train_data)):
-                filename = train_data[j]["path"].split("/")[-1]
-                ipa_filename = train_ipa[j]["path"].split("/")[-1]
-                assert filename == ipa_filename
-            for j in range(len(test_data)):
-                filename = test_data[j]["path"].split("/")[-1]
-                ipa_filename = test_ipa[j]["path"].split("/")[-1]
-                assert filename == ipa_filename
+        dataload_test(train_data, train_ipa, valid_data, valid_ipa)
 
         train_ipa = [train_ipa[i]["ipa"] for i in range(len(train_ipa))]
         valid_ipa = [valid_ipa[i]["ipa"] for i in range(len(valid_ipa))]
