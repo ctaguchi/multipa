@@ -16,7 +16,9 @@ At this moment, we have the following languages incorporated available in the tr
 We aim to include more languages to take into account linguistic diversity.
 
 ## How to run
-You will first need to convert the transcription in the CommonVoice dataset into IPA.
+First, run `pip install -r requirements.txt` for required packages if you need.
+
+You need to convert the transcription in the CommonVoice dataset into IPA before training a model.
 To do so, run `preprocess.py`; for example,
 ```
 python preprocess.py \
@@ -46,6 +48,7 @@ You can run the model (trained on 1k samples for each language, 9h in total) [he
 ## Notes
 - If you are using AFS, `preprocess.py` might cause `OS Error: File too large` due to reaching the limit of the number of files that a directory can accommodate.
 - Additional data from Forvo themselves are not uploaded in this repository.
+- The full list of IPA symbols was obtained from the [Panphon](https://github.com/dmort27/panphon) library.
 
 ## Citation
 Chihiro Taguchi, Yusuke Sakai, Parisa Haghani, David Chiang. "Universal Automatic Phonetic Transcription into the International Phonetic Alphabet". INTERSPEECH 2023.\
