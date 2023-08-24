@@ -29,7 +29,7 @@ python preprocess.py \
 Then, run `main.py` to train a model.
 For example:
 ```
-python3 main_general_preprocessed_allipa.py \
+python3 main.py \
         -l ja pl mt hu fi el ta \
         -tr 1000 1000 1000 1000 1000 1000 1000 \
         -te 200 200 200 200 200 200 200 \
