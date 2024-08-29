@@ -9,7 +9,22 @@ readme = "README.md"
 python = "^3.11"
 transformers = "^4.44.2"
 datasets = "^2.21.0"
+panphon = "^0.21.2"
+numpy = "^2.1.0"
+torch = "2.1.0"
+torchvision = "0.16.0"
+torchaudio = "2.1.0"
+mecab-python3 = "1.0.6"
+jiwer = "^3.0.4"
+ffmpeg-python = "^0.2.0"
+unidic = "1.1.0"
+romkan = "^0.2.1"
 
+
+[[tool.poetry.source]]
+name = "pytorch_cuda"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
