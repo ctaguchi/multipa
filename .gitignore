@@ -7,3 +7,4 @@ temp.json
 stats_train_valid_japlmthufielta-nq-ns.txt
 .python-version
 cache
+.env

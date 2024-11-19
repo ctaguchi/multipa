@@ -18,7 +18,9 @@ pip install --use-deprecated=legacy-resolver -r requirements.txt
 
 echo "Ambiente ativado"
 
-export HF_HOME="/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache"
+source .env
+
+export HF_HOME="$HF_HOME"
 
 # After installing via pip, you need to download the dictionary using the following command:
 # python -m unidic download
@@ -29,5 +31,5 @@ export HF_HOME="/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/mult
 python preprocess.py \                
     -l ja pl mt hu fi el ta \
     --num_proc 2 \
-    --cache_dir "/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7\ sem/topicos/multipa/cache" \
+    --cache_dir "$CACHE_DIR" \
     --clear_cache
