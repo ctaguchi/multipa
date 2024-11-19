@@ -1,0 +1,9 @@
+python-version
+venv
+converter/__pycache__
+__pycache__
+data_new
+temp.json
+stats_train_valid_japlmthufielta-nq-ns.txt
+.python-version
+cache

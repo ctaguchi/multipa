@@ -7,6 +7,7 @@ from typing import List
 
 def add_language() -> List[dict]:
     # a path looks like this: "additional/Xhosa/Audio/{$AUDIOFILE}.wav" or "additional/Xhosa/{$PRONFILE}.txt
+    # Used in the article: Adyghe(Adygean), Arabic, Burmese, Icelandic, Xhosa, and Zulu
     path = "./additional/"
     if not os.path.exists(path):
         path = "../additional/"

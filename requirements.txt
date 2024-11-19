@@ -13,3 +13,6 @@ torch==1.11.0
 torchaudio==0.11.0
 transformers @ git+https://github.com/huggingface/transformers@799cea64ac1029d66e9e58f18bc6f47892270723
 unidic==1.1.0
+numpy==1.26.4
+evaluate==0.4.3
+eng-to-ipa==0.0.2

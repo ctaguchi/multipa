@@ -236,6 +236,7 @@ if __name__ == "__main__":
             valid_data = valid_data.rename_column("text", "sentence")
         else:
             train_ipa = train_ipa.sort("path")
+            valid_ipa = valid_ipa.sort("path")
 
             # Get raw training dataset
             train_data = load_dataset(args.dataset,
@@ -250,7 +251,7 @@ if __name__ == "__main__":
                                      split="validation",
                                      num_proc=args.num_proc)
             valid_data = valid_data.sort("path")
-        
+
         assert train_data[0]["sentence"] == train_ipa[0]["sentence"], (train_data[0]["sentence"], train_ipa[0]["sentence"])
         assert valid_data[0]["sentence"] == valid_ipa[0]["sentence"], (valid_data[0]["sentence"], valid_ipa[0]["sentence"])
 
@@ -278,7 +279,7 @@ if __name__ == "__main__":
 
         # Clipping to the specified sample size using datasets's Dataset.select()
         train_limit = min(train_sample, len(train_data))
-        valid_limit = min(valid_sample, len(valid_data))
+        valid_limit = min(test_sample, len(valid_data))
         train_data = train_data.select(range(train_limit))
         valid_data = valid_data.select(range(valid_limit))
         
@@ -294,27 +295,31 @@ if __name__ == "__main__":
     common_voice_valid = concatenate_common_voice(valid_list)
     print("Concatenation done")
 
-    if args.additional_data:
-        print("Concatenating the additional data from Forvo...")
-        new_ds = add_language() # -> dict
-        new_ds = new_ds.train_test_split(test_size=0.2)
-        common_voice_train = concatenate_datasets([common_voice_train, new_ds["train"]])
-        common_voice_valid = concatenate_datasets([common_voice_valid, new_ds["test"]])
-        print("Concatenated additional data from Forvo")
+    # if args.additional_data:
+    #     print("Concatenating the additional data from Forvo...")
+    #     new_ds = add_language() # -> dict
+    #     new_ds = new_ds.train_test_split(test_size=0.2)
+    #     common_voice_train = concatenate_datasets([common_voice_train, new_ds["train"]])
+    #     common_voice_valid = concatenate_datasets([common_voice_valid, new_ds["test"]])
+    #     print("Concatenated additional data from Forvo")
 
     # Remove unnecessary columns
-    print("Removing unnecessary columns...")
-    common_voice_train = common_voice_train.remove_columns([
+    available_columns_train = common_voice_train.column_names
+    available_columns_valid = common_voice_valid.column_names
+    columns_to_remove = [
         "accent", "age", "client_id", "down_votes", "gender", "locale", "segment", "up_votes",
-        "speaker_id", "chapter_id", "id" #for librispeech
-        ])
-    common_voice_valid = common_voice_valid.remove_columns([
-        "accent", "age", "client_id", "down_votes", "gender", "locale",	"segment", "up_votes",
-        "speaker_id", "chapter_id", "id" #for librispeech
-        ])
+        "speaker_id", "chapter_id", "id" 
+    ]
+
+    filtered_columns_train = [col for col in columns_to_remove if col in available_columns_train]
+    filtered_columns_valid = [col for col in columns_to_remove if col in available_columns_valid]
+
+    print("Removing unnecessary columns...")
+    common_voice_train = common_voice_train.remove_columns(filtered_columns_train)
+    common_voice_valid = common_voice_valid.remove_columns(filtered_columns_valid)
     print("Unnecessary columns removed. Data preview:")
     print(common_voice_train[0])
-    assert common_voice_train.features.type == common_voice_test.features.type
+    assert common_voice_train.features.type == common_voice_valid.features.type
 
     # Remove spaces if specified
     if args.no_space:
@@ -337,7 +342,7 @@ if __name__ == "__main__":
         keep_in_memory=True,
         remove_columns=common_voice_train.column_names
     )
-    vocab_valid_ipa = common_voice_test.map(
+    vocab_valid_ipa = common_voice_valid.map(
         extract_all_chars_ipa,
         batched=True,
         batch_size=-1,
@@ -408,12 +413,12 @@ if __name__ == "__main__":
     common_voice_train = common_voice_train.map(
         prepare_dataset_ipa,
         remove_columns=common_voice_train.column_names,
-        num_proc=args.num_proc
+        # num_proc=args.num_proc
     )
     common_voice_valid = common_voice_valid.map(
         prepare_dataset_ipa,
-        remove_columns=common_voice_test.column_names,
-        num_proc=args.num_proc
+        remove_columns=common_voice_valid.column_names,
+        # num_proc=args.num_proc
     )
     print("Removing audio files longer than 6 secs...")
     common_voice_train = remove_long_data(common_voice_train)
@@ -455,11 +460,11 @@ if __name__ == "__main__":
     training_args = TrainingArguments(
         output_dir=output_dir,
         group_by_length=True,
-        per_device_train_batch_size=4,
-        gradient_accumulation_steps=2,
+        per_device_train_batch_size=4, #4
+        gradient_accumulation_steps=2, #2
         evaluation_strategy="steps",
         num_train_epochs=args.num_train_epochs,
-        fp16=True,
+        fp16=False, #True only if CUDA-capable GPU
         save_steps=100,
         eval_steps=100,
         logging_steps=10,

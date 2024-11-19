@@ -14,12 +14,12 @@ import utils
 import sys
 sys.path.insert(0, "./converter")
 
-from japanese_to_ipa import Japanese2IPA
-from maltese_to_ipa import Maltese2IPA
-from finnish_to_ipa import Finnish2IPA
-from greek_to_ipa import Greek2IPA
-from tamil_to_ipa import Tamil2IPA
-from english_to_ipa import English2IPA
+from converter.japanese_to_ipa import Japanese2IPA
+from converter.maltese_to_ipa import Maltese2IPA
+from converter.finnish_to_ipa import Finnish2IPA
+from converter.greek_to_ipa import Greek2IPA
+from converter.tamil_to_ipa import Tamil2IPA
+from converter.english_to_ipa import English2IPA
 
 parser = ArgumentParser(description="Create dataset locally.")
 parser.add_argument("-l", "--languages", nargs="+", default=["ja", "pl", "mt", "hu", "fi", "el", "ta", "en"],
@@ -36,11 +36,15 @@ args = parser.parse_args()
 assert args.clear_cache and args.cache_dir is not None, "Cache directory's path is not defined."
 
 def transliterate(sample: dict):
-    if "chapter_id" in sample.column_names:
-        lang = "en"
+    # if "chapter_id" in sample.column_names:
+    #     lang = "en"
+    if isinstance(sample, dict):
+        # Verifique se sample é um dicionário normal
+        lang = sample.get("locale", "en")
+        sent = sample.get("sentence", "")
     else:
         lang = sample["locale"]
-    sent = sample["sentence"]
+        sent = sample["sentence"]
     if lang == "ja":
         converter = Japanese2IPA()
         ipa = converter.remove_ja_punct(sent)
@@ -109,10 +113,12 @@ if __name__ == "__main__":
             # Tamil dataset is too big and reaches AFS file path limit
             train = load_dataset("mozilla-foundation/common_voice_11_0", l,
                                  split="train",
-                                 streaming=True)
+                                 streaming=True,
+                                 cache_dir=args.args.cache_dir)
             valid = load_dataset("mozilla-foundation/common_voice_11_0", l,
                                  split="validation",
-                                 streaming=True)
+                                 streaming=True,
+                                 cache_dir=args.cache_dir)
             ds_train = []
             ds_valid = []
             for i, batch in enumerate(train):

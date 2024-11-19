@@ -1,8 +1,11 @@
+import sys
+sys.path.insert(0, "./converter")
+
 from datasets import load_dataset, Dataset
-from japanese_to_ipa import Japanese2IPA
-from maltese_to_ipa import Maltese2IPA
-from finnish_to_ipa import Finnish2IPA
-from greek_to_ipa import Greek2IPA
+from converter.japanese_to_ipa import Japanese2IPA
+from converter.maltese_to_ipa import Maltese2IPA
+from converter.finnish_to_ipa import Finnish2IPA
+from converter.greek_to_ipa import Greek2IPA
 import random
 import epitran
 import re
