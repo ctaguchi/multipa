@@ -272,7 +272,7 @@ if __name__ == "__main__":
 
         # tests
         print("Testing dataset")
-        # dataload_test(train_data, train_ipa, valid_data, valid_ipa) CHATO PRA KRL
+        # dataload_test(train_data, train_ipa, valid_data, valid_ipa)
 
         train_ipa = [train_ipa[i]["ipa"] for i in tqdm(range(len(train_ipa)), desc="Processing train_ipa")]
         valid_ipa = [valid_ipa[i]["ipa"] for i in tqdm(range(len(valid_ipa)), desc="Processing valid_ipa")]
