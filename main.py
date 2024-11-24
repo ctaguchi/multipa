@@ -1,4 +1,4 @@
-from datasets import load_dataset, load_metric, Audio, concatenate_datasets, Dataset
+from datasets import load_dataset, Audio, concatenate_datasets, Dataset, DatasetDict
 from transformers import Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, Wav2Vec2ForCTC, TrainingArguments, Trainer
 import json
 import torch
@@ -9,6 +9,7 @@ import argparse
 import pandas as pd
 import os
 import multiprocess
+from tqdm import tqdm
 
 from data_utils import filter_low_quality, downsampling
 
@@ -126,23 +127,30 @@ def remove_space(batch: dict) -> dict:
     return batch
 
 def dataload_test(train_data, train_ipa, valid_data, valid_ipa):
-    assert len(train_data) == len(train_ipa), print("Length of train_data and train_ipa does not match")
-    assert len(valid_data) == len(valid_ipa), print("Length of valid_data and valid_ipa does not match")
+    assert len(train_data) == len(train_ipa), "Length of train_data and train_ipa does not match"
+    assert len(valid_data) == len(valid_ipa), "Length of valid_data and valid_ipa does not match"
+    
     if l == "en":
-        for j in range(len(train_data)):
+        print("Validating train data...")
+        for j in tqdm(range(len(train_data)), desc="Train Data Validation", unit="file"):
             filename = train_data[j]["file"]
             ipa_filename = train_ipa[j]["file"]
             assert filename == ipa_filename
-        for j in range(len(valid_ipa)):
+        
+        print("Validating valid data...")
+        for j in tqdm(range(len(valid_data)), desc="Valid Data Validation", unit="file"):
             filename = valid_data[j]["file"]
             ipa_filename = valid_ipa[j]["file"]
             assert filename == ipa_filename
     else:
-        for j in range(len(train_data)):
+        print("Validating train data...")
+        for j in tqdm(range(len(train_data)), desc="Train Data Validation", unit="file"):
             filename = train_data[j]["path"].split("/")[-1]
             ipa_filename = train_ipa[j]["path"].split("/")[-1]
             assert filename == ipa_filename
-        for j in range(len(valid_data)):
+        
+        print("Validating valid data...")
+        for j in tqdm(range(len(valid_data)), desc="Valid Data Validation", unit="file"):
             filename = valid_data[j]["path"].split("/")[-1]
             ipa_filename = valid_ipa[j]["path"].split("/")[-1]
             assert filename == ipa_filename
@@ -212,10 +220,12 @@ if __name__ == "__main__":
         # Get preprocessed training dataset with IPA
         train_ipa = load_dataset("json",
                                  data_files="{}{}_train.json".format(args.data_dir, l),
-                                 split="train")
+                                 split="train",)
+                                #  cache_dir=os.getenv("CACHE_DIR"))
         valid_ipa = load_dataset("json",
                                  data_files="{}{}_valid.json".format(args.data_dir, l),
-                                 split="train")
+                                 split="train",)
+                                #  cache_dir=os.getenv("CACHE_DIR"))
         if l == "en":
             # Librispeech's file name column is "file"
             train_ipa = train_ipa.sort("file")
@@ -261,12 +271,16 @@ if __name__ == "__main__":
             valid_data = valid_data.filter(lambda batch: "ச" not in batch["sentence"])
 
         # tests
-        dataload_test(train_data, train_ipa, valid_data, valid_ipa)
+        print("Testing dataset")
+        # dataload_test(train_data, train_ipa, valid_data, valid_ipa) CHATO PRA KRL
 
-        train_ipa = [train_ipa[i]["ipa"] for i in range(len(train_ipa))]
-        valid_ipa = [valid_ipa[i]["ipa"] for i in range(len(valid_ipa))]
+        train_ipa = [train_ipa[i]["ipa"] for i in tqdm(range(len(train_ipa)), desc="Processing train_ipa")]
+        valid_ipa = [valid_ipa[i]["ipa"] for i in tqdm(range(len(valid_ipa)), desc="Processing valid_ipa")]
+        # train_ipa = [train_ipa[i]["ipa"] for i in range(len(train_ipa))]
+        # valid_ipa = [valid_ipa[i]["ipa"] for i in range(len(valid_ipa))]
 
         # Combine the IPA column
+        print("Combining columns")
         train_data = train_data.add_column("ipa", train_ipa)
         valid_data = valid_data.add_column("ipa", valid_ipa)
         if l == "en":

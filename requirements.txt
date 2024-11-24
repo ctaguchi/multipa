@@ -1,3 +1,4 @@
+--extra-index-url https://download.pytorch.org/whl/rocm6.2
 datasets==2.9.0
 epitran==1.24
 ffmpeg-python==0.2.0
@@ -11,6 +12,15 @@ pydub==0.25.1
 romkan==0.2.1
 torch==1.11.0
 torchaudio==0.11.0
+# torch==1.10.2+rocm4.2 
+# torchaudio==0.10.2
+# torchvision==0.11.3+rocm4.2
+# torch==2.1.2+rocm5.6 
+# torchvision==0.16.2+rocm5.6 
+# torchaudio==2.1.2+rocm5.6
+# torch==2.5.1+rocm6.2  
+# torchvision==0.20.1+rocm6.2  
+# torchaudio==2.5.1+rocm6.2  
 transformers @ git+https://github.com/huggingface/transformers@799cea64ac1029d66e9e58f18bc6f47892270723
 unidic==1.1.0
 numpy==1.26.4

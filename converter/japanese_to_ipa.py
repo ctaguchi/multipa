@@ -1,5 +1,5 @@
 # Learning IPA from Japanese and Polish                                                                                                                                                                    
-from datasets import load_dataset, load_metric, Audio, concatenate_datasets, Dataset
+from datasets import load_dataset, Audio, concatenate_datasets, Dataset
 from transformers import Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor, Wav2Vec2Processor, Wav2Vec2ForCTC, TrainingArguments, Trainer
 import json
 import torch

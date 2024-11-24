@@ -1,0 +1,202 @@
+  cd /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7\ sem/topicos/multipa ; /usr/bin/env /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7\ sem/topicos/multipa/venv/bin/python /home/lain/.vscode/extensions/ms-python.debugpy-2024.12.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 44885 -- /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7\ sem/topicos/multipa/main.py -l ja pl mt hu fi el -tr 1000 1000 1000 1000 1000 10
+00 -te 200 200 200 200 200 200 -qf False False False False False False -a True -s japlmthufielta-nq-ns -ns True -v vocab.json -e 10 
+WARNING:datasets.builder:Using custom data configuration default-fd0cb2f5c431c097
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-fd0cb2f5c431c097/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.builder:Using custom data configuration default-bed25236d62207f8
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-bed25236d62207f8/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-fd0cb2f5c431c097/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-d88d7c17d3750849.arrow
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-bed25236d62207f8/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-415d2c8963e80f20.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-c4dde6575ac28587.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-5f8d240f8bf69135.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-dacc476c182bd492.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-ebaf8a31f453b4f7.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-1ed4c0d5f8e74101.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-5285b0fc43d3b567.arrow
+WARNING:datasets.builder:Using custom data configuration default-e80fc8d0bf8843c9
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-e80fc8d0bf8843c9/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.builder:Using custom data configuration default-483f4ff4671d08e5
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-483f4ff4671d08e5/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-e80fc8d0bf8843c9/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-9ab31f34b9390f94.arrow
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-483f4ff4671d08e5/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-bfe3c73c92083fec.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/pl/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/pl/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-03a083354f2bd8d2.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/pl/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/pl/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-ef7d9baa96ac69a0.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/pl/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-0acf52ae8816a17c.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/pl/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-a9b824b288f4824f.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/pl/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-cf40915324ff29c6.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/pl/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-bf5b488f4c123405.arrow
+WARNING:datasets.builder:Using custom data configuration default-8d0ca87f9204845b
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-8d0ca87f9204845b/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.builder:Using custom data configuration default-f09bc39cb9f47089
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-f09bc39cb9f47089/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-8d0ca87f9204845b/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-57b0cbccca7d9081.arrow
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-f09bc39cb9f47089/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-f963e5fc3e5cf92e.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/mt/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/mt/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-3e18581a25fdade2.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/mt/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/mt/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-c5985c78a1502208.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/mt/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-844eb4a08b98e276.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/mt/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-3d0af919191f7196.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/mt/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-62930a9162b012a1.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/mt/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-3ed4bf1b17c80612.arrow
+WARNING:datasets.builder:Using custom data configuration default-c1acac9bf5b22fb6
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-c1acac9bf5b22fb6/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.builder:Using custom data configuration default-f3e122bf5772fb55
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-f3e122bf5772fb55/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-c1acac9bf5b22fb6/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-69aba3efae9f75ce.arrow
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-f3e122bf5772fb55/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-e09cfa266f930f6d.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/hu/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/hu/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-fb5fccc1f0869a6c.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/hu/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/hu/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-36c0c0890d48b478.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/hu/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-52f757c62f4a82db.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/hu/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-240a7cb79c3a2d0c.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/hu/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-938427163f63c67a.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/hu/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-cca9ee873107f72a.arrow
+WARNING:datasets.builder:Using custom data configuration default-e7bf0d456b390a6e
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-e7bf0d456b390a6e/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.builder:Using custom data configuration default-c355190fed1c3130
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-c355190fed1c3130/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-e7bf0d456b390a6e/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-b53ce5ff14ae917f.arrow
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-c355190fed1c3130/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-4c33d82eaae664a5.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/fi/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/fi/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-70067f44431f2d0e.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/fi/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/fi/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-76fce3223ac3e13d.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/fi/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-9b7a5f67d042a440.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/fi/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-c2e0cdabea8b0658.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/fi/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-47ffdd69a8e9ba95.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/fi/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-58a6a3220901742d.arrow
+WARNING:datasets.builder:Using custom data configuration default-09cbc5eee0fd8a0b
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-09cbc5eee0fd8a0b/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.builder:Using custom data configuration default-266f1b8b4af9fad2
+WARNING:datasets.builder:Found cached dataset json (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-266f1b8b4af9fad2/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-09cbc5eee0fd8a0b/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-8ef5ca9ff8129bac.arrow
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/json/default-266f1b8b4af9fad2/0.0.0/0f7e3662623656454fcd2b650f34e886a7db4b9104504885bd462096cc7a9f51/cache-9cd86911a4395084.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/el/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/el/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-b90fd10761030b45.arrow
+WARNING:datasets.builder:Found cached dataset common_voice_11_0 (/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/el/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631)
+WARNING:datasets.arrow_dataset:Loading cached sorted indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/el/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-6b4737f6c4320b7a.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/el/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-50867a3007e60928.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/el/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-242e2e347e2df2d6.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/el/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-4d51598fb66731d2.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/el/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-3c098bc1325801e7.arrow
+Concatenating datasets for each language...
+Concatenation done
+Removing unnecessary columns...
+Unnecessary columns removed. Data preview:
+{'path': '/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/downloads/extracted/8a87f0e688324ae903bf5038c7f5ee86cdbd6746657cc3458f6926d98398798a/ja_train_0/common_voice_ja_25310216.mp3', 'audio': {'path': '/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/downloads/extracted/8a87f0e688324ae903bf5038c7f5ee86cdbd6746657cc3458f6926d98398798a/ja_train_0/common_voice_ja_25310216.mp3', 'array': array([ 0.        ,  0.        ,  0.        , ..., -0.00069222,
+       -0.00075858, -0.00044048], dtype=float32), 'sampling_rate': 48000}, 'sentence': 'わたしは音楽がすきです。', 'ipa': 'wätäɕiwäo̞ŋgäkɯgäsɯkide̞sɯ'}
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-416f6fa2b63b4873.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-fd10ee6152aa9fdb.arrow
+Shuffling the dataset...
+WARNING:datasets.arrow_dataset:Loading cached shuffled indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-599ddffed3b22b1a.arrow
+WARNING:datasets.arrow_dataset:Loading cached shuffled indices for dataset at /mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/cache/datasets/mozilla-foundation___common_voice_11_0/ja/11.0.0/3f27acf10f303eac5b6fbbbe02495aeddb46ecffdb0a2fe3507fcfbf89094631/cache-a17c80ecce0cbf87.arrow
+Shuffling done
+Creating vocabulary...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 31.97ba/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 135.23ba/s]
+Vocab created. Details:
+vocab_dict_ipa: 309
+Adding [UNK] and [PAD]...
+[UNK] and [PAD] added
+Writing vocab json files...
+Vocab json files created
+Creating Tokenizers...
+Tokenizers created
+Creating Feature Extractor...
+Feature Extractor created
+creating Processors...
+Processors created
+Adjusting the sampling rate to 16,000Hz...
+Sampling rate adjustment done
+Preprocessing the dataset...
+  0%|                                                                                                                                                                                                                                          | 0/6000 [00:00<?, ?ex/s]/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/venv/lib/python3.9/site-packages/transformers/models/wav2vec2/processing_wav2vec2.py:155: UserWarning: `as_target_processor` is deprecated and will be removed in v5 of Transformers. You can process your labels by using the argument `text` of the regular `__call__` method (either in the same call as your audio inputs, or in a separate call.
+  warnings.warn(
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6000/6000 [02:48<00:00, 35.61ex/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1200/1200 [00:29<00:00, 40.17ex/s]
+Removing audio files longer than 6 secs...
+/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/main.py:102: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only.
+  dftest = dftest.drop('len', 1)
+/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/main.py:102: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only.
+  dftest = dftest.drop('len', 1)
+Dataset lengths to be trained and tested:
+Train: 5002
+Valid: 1042
+Preprocessing done
+Creating the data collator
+Processors created
+Adjusting the sampling rate to 16,000Hz...
+Sampling rate adjustment done
+Preprocessing the dataset...
+  0%|                                                                                                                                                                                                                                          | 0/6000 [00:00<?, ?ex/s]/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/venv/lib/python3.9/site-packages/transformers/models/wav2vec2/processing_wav2vec2.py:155: UserWarning: `as_target_processor` is deprecated and will be removed in v5 of Transformers. You can process your labels by using the argument `text` of the regular `__call__` method (either in the same call as your audio inputs, or in a separate call.
+  warnings.warn(
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6000/6000 [02:48<00:00, 35.61ex/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1200/1200 [00:29<00:00, 40.17ex/s]
+Removing audio files longer than 6 secs...
+/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/main.py:102: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only.
+  dftest = dftest.drop('len', 1)
+/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/main.py:102: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only.
+  dftest = dftest.drop('len', 1)
+Dataset lengths to be trained and tested:
+Train: 5002
+Valid: 1042
+Preprocessing done
+Creating the data collator
+Data collator created
+Defining the model...
+/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/venv/lib/python3.9/site-packages/huggingface_hub/file_download.py:797: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+config.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.77k/1.77k [00:00<00:00, 1.62MB/s]
+pytorch_model.bin: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.27G/1.27G [01:50<00:00, 11.5MB/s]
+Some weights of the model checkpoint at facebook/wav2vec2-large-xlsr-53 were not used when initializing Wav2Vec2ForCTC: ['project_q.bias', 'quantizer.weight_proj.bias', 'project_hid.weight', 'quantizer.weight_proj.weight', 'project_hid.bias', 'quantizer.codevectors', 'project_q.weight']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at facebook/wav2vec2-large-xlsr-53 and are newly initialized: ['lm_head.weight', 'lm_head.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Model defined
+Freezing the feature extractor...
+/mnt/5fc7fd01-6487-4f39-8109-556023ff1f7f/puc/7 sem/topicos/multipa/venv/lib/python3.9/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py:1642: FutureWarning: The method `freeze_feature_extractor` is deprecated and will be removed in Transformers v5.Please use the equivalent `freeze_feature_encoder` method instead.
+  warnings.warn(
+Feature extractor frozen
+Beginning the training...
+The following columns in the training set don't have a corresponding argument in `Wav2Vec2ForCTC.forward` and have been ignored: __index_level_0__. If __index_level_0__ are not expected by `Wav2Vec2ForCTC.forward`,  you can safely ignore this message.
+
+
+Preprocessing done
+Creating the data collator
+Data collator created
+Defining the model...
+/mnt/5fe7fda1-6487-4139-8189-5369231f1f71/puc/7 sea/topics/ault/pa/ver/11b/python3.9/site-packages/huggingface.he/file_download.py:797: FutureWarning: 'resume_download is deprecated and will be renoved in version 1.0.0. Downlosds always resume when possible. If you want to force a new download, use `force_download=True`
+  warnings. warn{
+config-Json: 100%|
+pytorch_model.bin: 100%|
+Sone weights of the nodel checkpoint at facebook/wav2vec2-large-xlsr-53 were not used when initializing Wav2Vec2ForCTC:['project_q.bias', 'quantizer.weight_proj.weight', 'project_hid.bias', 'quantizer.codevectors', 'project_q.weight']
+This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (eg. laitializing a BertForSequenceClassification model from a BertForPreTraining model).
+- Tids IS NOT expected if you are intializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForPreTraining model).
+Some weights of Wav2Vec2ForCTC were not initialized fron the model checkpoint at facebook/wav2vec-large-xlsr-53 and are newly initialized: ["lm_head.weight", "lm_head.blas"]
+You should probably TRAIN this
+nodel on a down-strean task to be able to use it for predictions and inference.
+Model defined
+Freezing the feature extractor...
+/mnt/5fc7d01-6487-4199-8199-356023fff71/puc/7 sem/topicos/multipa/venv/lib/python3.9/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py:1642: Futurewarning: The method "freeze_feature_extractor' is deprecated and will be removed in Transformers v5. Please use the equivalent `freeze_feature_encoder` method instead.
+Feature extractor frozen
+Begining the training...
+The following columns in the training set don't have a corresponding argument in `Wav2Vec2ForCTC.foward` and have been ignored: __index_level_0__. If __index_level_0__ are not expected by 'Wav2Vec2ForCTC.foward`, you can safely ignore this message. 
+/mnt/5fc7fd01-6457-4139-8103-336023f1f71/puC/7 sem/topicos/multipa/venv/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This iplementation of Adam is deprecated and will be removed in a future version. Use the Pytorch implementation torch.optim.Adam instead, or set 'no_deprecation_warning=True' to disable this warning
+warnings.warn[
+***** Running training ****
+Num examples = 5002
+Num Epochs = 10
+Instantaneous batch size per device = 4
+Total traom batch size (w. parallel, distributed & accumulation) = 8
+Gradient Accumulation steps = 2
+Total optimization steps = 6250
+Number of trainable parameters = 311547319
+/mnt/5fc7fd01-6487-4139-8189-556023ff1f7f/puc/7 sem/topicos/multipla/venv/lib/python3.9/site-packages/transformers/models/wav2vec/processing_wav2vec2.py:155: UserWarning: 'as_target_processor' is deprecated and will be removed in v5 of Transformers. You can process
+0%|
+You can proces your labels by using the argument 'text' of the regular '__call__' methos (either in the same call as your audio inputs, or in a separate call.
+ warnings.warn{

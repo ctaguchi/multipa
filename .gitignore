@@ -8,3 +8,6 @@ stats_train_valid_japlmthufielta-nq-ns.txt
 .python-version
 cache
 .env
+.vscode
+.wav2vec2-large-xlsr-japlmthufiel-ipajaplmthufielta-nq-ns
+wav2vec2-large-xlsr-japlmthufiel-ipajaplmthufielta-nq-ns
