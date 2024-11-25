@@ -12,3 +12,6 @@ cache
 wav2vec2-large-xlsr-japlmthufiel-ipajaplmthufielta-nq-ns
 wav2vec2-large-xlsr-japlmthufiel-ipajaplmthufielta-nq-ns.zip
 wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns
+wav2vec2-large-xlsr-japlmthufiel-ipajaplmthufielta-nq-ns-origin
+model.ipynb
+gpu_test
