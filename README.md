@@ -3,6 +3,8 @@ MultIPA is yet another automatic speech transcription model into phonetic IPA.
 The idea is that, if we train a multilingual speech-to-IPA model with enough amount of good phoneme representations, the model's output will be approximated to phonetic transcriptions.
 Please check out the [Paper](https://arxiv.org/abs/2308.03917) for details.
 
+(Updated Feb 28, 2025): We are planning to add more data and refine the model. Please let us know if you are interested in working together to make it better!
+
 ## Available training languages
 At this moment, we have the following languages incorporated available in the training data:
 - Finnish
